@@ -9,6 +9,10 @@ include("doct")
 <?php
 	if(isset($_GET['fejlesztesek']))
 	{
-		include("fejlesztesek.php");
+		include("scripter/fejlesztesek.php");
+	}
+	if(isset($_GET['feladatok']))
+	{
+		include("scripter/feladatok.php");
 	}
 ?>

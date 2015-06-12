@@ -258,7 +258,7 @@ header('Content-Type: text/html; charset=utf-8');
 								<br><hr><br>
 								<div class="subnav_gomb" onclick="window.location.href=\'index.php?menu=scripter&atnezes\';">Áttekintés</div>
 								<div style="padding-top: 5px;"></div>
-								<div class="subnav_gomb" onclick="window.location.href=\'index.php?menu=scripter&beosztasok\';">Beosztások</div>
+								<div class="subnav_gomb" onclick="window.location.href=\'index.php?menu=scripter&feladatok\';">Feladatok</div>
 								<div style="padding-top: 5px;"></div>
 								<div class="subnav_gomb" onclick="window.location.href=\'index.php?menu=scripter&szabalyzat\';">Scripter Szabályzat</div>
 								<div style="padding-top: 5px;"></div>
