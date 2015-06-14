@@ -1,8 +1,8 @@
 <?php 
 header('Content-Type: text/html; charset=utf-8'); 
 ?> 
-<?php require("include/functions.php");?>
-<?php require("include/doct.php");?>
+<?php include("functions.php");?>
+<?php include("doct.php");?>
 </script>
 </head>
 
@@ -11,6 +11,18 @@ header('Content-Type: text/html; charset=utf-8');
 <div align="center">
 <div style="width: 1088px;">
 <div class="container">
+<?php
+ /*Közösségi gombok*/
+echo"
+<div class='social-buttons'>
+	<a id='facebook-btn' href='https://www.facebook.com/fntshelp' target='_blank'>
+		<span class='social-icon'><span class='social-text'>Kövess minket a Facebook-on!</span></span>
+	</a>
+	<a id='rss-btn' href='' target='_blank'>
+		<span class='social-icon'><span class='social-text'>Kövess minket Youtube-on!</span></span>
+	</a>
+</div>";
+?>
 	<div class="header"></div>
 	<div class="nav">
 		<a href="index.php"><font color=white>Főoldal</font></a>

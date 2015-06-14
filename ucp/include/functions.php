@@ -11,19 +11,6 @@ function mailConvert($mail) {
 	return str_replace(array("@", "."), array(" kukac ", " pont "), $mail);
 }
 
-function uid($nick,$conn)
-{
-	$sql = "SELECT * FROM `jatekosok` WHERE `nev`='$nick'";
-	$result = mysql_query($sql,$conn);
-	$row = mysql_fetch_array($result);
-
-	if(mysql_num_rows($result) >= 0)
-	{
-		return $row['UID'];
-	}
-	else return -1;
-}
-
 function set_admin($name,$conn)
 {
     $name = mysql_real_escape_string($name);
@@ -129,17 +116,6 @@ if(isset($_COOKIE['kivalasztott']))
 		$sor = mysql_fetch_assoc($kivalasztottsorkereses);
 	}
 }
-
-/*Közösségi gombok*/
-echo"
-<div class='social-buttons'>
-	<a id='facebook-btn' href='https://www.facebook.com/fntshelp' target='_blank'>
-		<span class='social-icon'><span class='social-text'>Kövess minket a Facebook-on!</span></span>
-	</a>
-	<a id='rss-btn' href='' target='_blank'>
-		<span class='social-icon'><span class='social-text'>Kövess minket Youtube-on!</span></span>
-	</a>
-</div>";
 		
 function gomb($szoveg, $link)
 {

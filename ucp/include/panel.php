@@ -42,6 +42,7 @@
 				}
 				else
 				{
+					$lathatosag = true;
 					$query = "select * from jatekosok";
 					$result = mysql_query($query);
 					$num = mysql_num_rows($result);
@@ -64,6 +65,11 @@
 						echo "<b><font color=yellow><h4>$money $penzed &cent;</font><br>";
 						echo "<b><font color=yellow><h4>$pistol $gyilok db $skull $halal db</font><br>";
 						echo "<br>";
+						if($lathatosag == true)
+						{
+							include("include/serverinfo.php");
+							
+						}
 						echo "<div class='subnav_gomb_leader' onclick='window.location.href=\"index.php?kijelentkezes\";'>Kijelentkezés</div>";
 					$i++;
 					}
