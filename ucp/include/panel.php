@@ -1,4 +1,4 @@
-<script type="text/javascript">
+﻿<script type="text/javascript">
   var tick;
   function stop() {
   clearTimeout(tick);
@@ -47,7 +47,7 @@
 					$result = mysql_query($query);
 					$num = mysql_num_rows($result);
 					$i = 0;
-					while ($i < $num) {
+					//while ($i < $num) {
 						$hour = "<img src='img/hour.png'>";
 						$money = "<img src='img/money.png'>";
 						$skull = "<img src='img/skull.png'>";
@@ -71,8 +71,8 @@
 							
 						}
 						echo "<div class='subnav_gomb_leader' onclick='window.location.href=\"index.php?kijelentkezes\";'>Kijelentkezés</div>";
-					$i++;
-					}
+					//$i++;
+					//}
 				}
 				?>
 			</div>
